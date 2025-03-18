@@ -7,7 +7,7 @@ let numbers2 = [10, 20, 30, 40, 50]; //aqui ceita funções, mas não posso alte
 number[0] = 15; // vai ter alterado o primerio valor
 console.log(number);
 let numbersCopy = numbers2.map((value) => value * 2); //uma nova varável recebendo o valor do array x2 em cada posição
-// o .map utiliza sobre uma cópia, sobre o original ele não funcionaria
+// o .map retorna um novo array, por isso funciona, pois ele não muda os valores originais sobre o  original
 console.log(numbersCopy);
 console.log(numbers2.map(item => item * 2));
 let exeTuple = [1, 2, 3]; //tupla usando o radonly
