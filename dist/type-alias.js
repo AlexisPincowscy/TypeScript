@@ -1,6 +1,7 @@
 "use strict";
 // Type Alias são "apelidos" que podemos dar para um tipo de variável
 // A escrita é PascalCase (primeira maiúscula)
+// Essa notação aparece apenas no TS, some quando fazemos a compilação
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.showProgrammer = showProgrammer;
 // aqui chamando a função passando o parâmetro e esse parâmetro é do tipo Programmer
