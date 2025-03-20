@@ -1,5 +1,5 @@
 // Funcções do tipo RETURN 
-
+// Elas tem um valor de retorno definido, no TS é importante escrevermos qual o tipo será devolvido
 
 type CartItem = {
     id: number,
@@ -43,7 +43,7 @@ const customer: Customer ={
 console.log("Detalhes do cliente: ", customer);
 
 
-export function calculateTotal(shoppingCart:ShoppingCart): number{
+export function calculateTotal(shoppingCart:ShoppingCart): number{ //aqui dizemos que o resultado é retornado em number
     const total = shoppingCart.cartIems.reduce((acc,item)=>acc+item.price,0)
     return total   
 }
@@ -52,7 +52,7 @@ const total = calculateTotal(shoppingCart)
 console.log(`Total do carrinho: R$ ${total.toFixed(2)}`);
 
 
-export function getPrincipalAddress (customer:Customer): Address | undefined{
+export function getPrincipalAddress (customer:Customer): Address | undefined{ // aqui ele retorna em tipo Address ou undefined, repare que usamos um type para definir retorno
     return customer.addresses.find(addresses => addresses.default)
 }
 

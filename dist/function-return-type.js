@@ -1,5 +1,6 @@
 "use strict";
 // Funcções do tipo RETURN 
+// Elas tem um valor de retorno definido, no TS é importante escrevermos qual o tipo será devolvido
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculateTotal = calculateTotal;
 exports.getPrincipalAddress = getPrincipalAddress;
