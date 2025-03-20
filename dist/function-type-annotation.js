@@ -1,8 +1,5 @@
-"use strict";
 // Funções Type Annotation
 // Tipando a função
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.getPrincipalAddress = exports.calculateTotal = void 0;
 const shoppingCart = {
     cartIems: [
         { id: 70100, price: 500 },
@@ -20,7 +17,7 @@ const customer = {
 };
 // Para tiparmos a função, em uma variável seguimos o padrão:
 let calculateTotal; // aqui indicamos a variável que ela receberá uma função com esses parâmetros e retunr tipo number
-exports.calculateTotal = calculateTotal = function (shoppingCart) {
+calculateTotal = function (shoppingCart) {
     const total = shoppingCart.cartIems.reduce((acc, item) => acc + item.price, 0);
     return total;
 };
@@ -29,6 +26,6 @@ console.log(`Total do carrinho: R$ ${total.toFixed(2)}`);
 const getPrincipalAddress = (customer) => {
     return customer.addresses.find(addresses => addresses.default);
 };
-exports.getPrincipalAddress = getPrincipalAddress;
 const principalAddress = getPrincipalAddress(customer);
 console.log(principalAddress?.cep);
+export { calculateTotal, getPrincipalAddress };

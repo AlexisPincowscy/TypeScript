@@ -1,14 +1,11 @@
-"use strict";
 // Tipagem literal
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.logger = logger;
 // aqui tipagem normal, tipo string e valor info
 let logType = 'info';
 logType = 'warn';
 // ele aceita as mudanças
 // mas podemos fazer um tipo literal
 let logType2; //repare que não é = e sim :, então estou tipando ela com esse valor
-function logger(type, message) {
+export function logger(type, message) {
     switch (type) {
         case 'info':
             console.log(`Info: ${message}`);

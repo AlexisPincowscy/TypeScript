@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "copy": "copyfiles -u 1 ./src/index.html ./dist/",
+    "buid": "npm run copy && tsc",
+    "dev": "npm run copy && tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +21,7 @@
   "homepage": "https://github.com/AlexisPincowscy/TypeScript#readme",
   "description": "",
   "devDependencies": {
+    "copyfiles": "^2.4.1",
     "prettier": "^3.5.3",
     "typescript": "^5.8.2"
   }

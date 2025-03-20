@@ -1,10 +1,7 @@
-"use strict";
 // O type any não deve ser usado, já que ele tira o propósito do TS
 // Podemos definir um valor com any, mas o TS vai aceitar qualquer coisa, o que pode
 // gerar erros mais à frente, sendo que a função do TS é tipar o JS
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.handleFileUpload = handleFileUpload;
-function handleFileUpload(file) {
+export function handleFileUpload(file) {
     console.log(`Nome: ${file.name}`);
     console.log(`Tamanho: ${file.zise}`); //aqui erramos o atributo do objeto
 }

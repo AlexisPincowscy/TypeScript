@@ -1,7 +1,4 @@
-"use strict";
 // Usando readonly em atributos
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.showMovies = showMovies;
 let movies = {
     movie1: {
         title: 'A origem',
@@ -24,7 +21,7 @@ let movies = {
         genre: 'Crime-Police'
     }
 };
-function showMovies(movies) {
+export function showMovies(movies) {
     // movies.movie1.title = 'Novo título' maneira de alterar um atributo
     console.log(movies);
 }
