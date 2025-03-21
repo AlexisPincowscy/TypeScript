@@ -1,2 +1,3 @@
-import { bootstrap } from "./modules/basic-types/type-intersection.js";
+
+import { bootstrap } from "./modules/narrowing/truthy-falsy.js";
 export { bootstrap };
